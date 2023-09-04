@@ -48,7 +48,7 @@ public class MedicarePageTest {
 		driver.findElement(By.xpath("//div/ul[2]/li[1]")).click();
 		Thread.sleep(1000);
 		RegisterPage signUpObj = new RegisterPage(driver);
-		signUpObj.sendTextForSign("preethy", "v s", "pooja1@gmail.com", "7777775589", "pree123", "pree123");
+		signUpObj.sendTextForSign("preethy", "v s", "pooja37@gmail.com", "7777775589", "pree123", "pree123");
 		String title2 = "Medicare - Membership";
 		AssertJUnit.assertEquals(title2, driver.getTitle());
 		signUpObj.clickBtnbill();
@@ -130,7 +130,7 @@ public class MedicarePageTest {
 		driver.findElement(By.cssSelector("a[href='/medicare/membership']")).click();
 		Thread.sleep(1000);
 		RegisterPage signUpObj = new RegisterPage(driver);
-		signUpObj.sendTextForSignSupplier("Ravi", "R", "ravi12@gmail.com", "7777773389", "ravi", "ravi");
+		signUpObj.sendTextForSignSupplier("Ravi", "R", "ravi6@gmail.com", "7777773389", "ravi", "ravi");
 		String title2 = "Medicare - Membership";
 		AssertJUnit.assertEquals(title2, driver.getTitle());
 		signUpObj.clickBtnbill();
