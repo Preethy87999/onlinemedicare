@@ -38,8 +38,7 @@ public class MedicarePageTest {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		// driver.get("http://localhost:8081/medicare/");	
-		driver.get("http://localhost:8080/medicare1/");	
+		driver.get("http://localhost:8081/medicare/");	
 	}
 	
 	@Test(priority =1)
