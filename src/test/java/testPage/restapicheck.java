@@ -17,7 +17,7 @@ public class restapicheck {
 	@Test
 	public void getAllProduct() {
 		
-		String url = "http://localhost:8081/medicare/";
+		String url = "http://localhost:8080/medicare1/";
 		RestAssured.baseURI = url;
 		RestAssured.given().get("show/all/products").then().log().body().statusCode(200);
 	}
@@ -26,7 +26,7 @@ public class restapicheck {
 	public void getCategoryData() {
 		 RequestSpecification httpRequest = RestAssured.given();
 
-		Response response = httpRequest.get("http://localhost:8081/medicare/show/category/2/products");
+		Response response = httpRequest.get("http://localhost:8080/medicare1/show/category/2/products");
 		response.then().log().status()
 	      .statusCode(200);
 		ResponseBody body = response.getBody();
