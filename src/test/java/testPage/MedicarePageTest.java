@@ -32,30 +32,30 @@ public class MedicarePageTest {
 	public static WebDriver driver =null;
 	@BeforeTest
 	public void homePage() {
-		// WebDriverManager.chromedriver().setup();
-		// driver = new ChromeDriver();
-		// driver.manage().window().maximize();
-		// driver.manage().deleteAllCookies();
-		// driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
-		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		// driver.get("http://localhost:8081/medicare/");	
-
 		WebDriverManager.chromedriver().setup();
-		
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("start-maximized"); // open Browser in maximized mode
-		options.addArguments("disable-infobars"); // disabling infobars
-		options.addArguments("--disable-extensions"); // disabling extensions
-		options.addArguments("--disable-gpu"); // applicable to windows os only
-		options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-		options.addArguments("--no-sandbox"); // Bypass OS security model
-	        options.addArguments("--headless");
-		driver = new ChromeDriver(options);
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("http://localhost:8081/medicare/");
+		driver.get("http://localhost:5050/medicare1/");	
+
+		// WebDriverManager.chromedriver().setup();
+		
+		// ChromeOptions options = new ChromeOptions();
+		// options.addArguments("start-maximized"); // open Browser in maximized mode
+		// options.addArguments("disable-infobars"); // disabling infobars
+		// options.addArguments("--disable-extensions"); // disabling extensions
+		// options.addArguments("--disable-gpu"); // applicable to windows os only
+		// options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+		// options.addArguments("--no-sandbox"); // Bypass OS security model
+	 //        options.addArguments("--headless");
+		// driver = new ChromeDriver(options);
+		// driver.manage().window().maximize();
+		// driver.manage().deleteAllCookies();
+		// driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
+		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		// driver.get("http://localhost:8081/medicare/");
 	}
 	
 	@Test(priority =1)
