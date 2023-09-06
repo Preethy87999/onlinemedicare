@@ -32,7 +32,8 @@ public class MedicarePageTest {
 	public static WebDriver driver =null;
 	@BeforeTest
 	public void homePage() {
-		WebDriverManager.chromedriver("116.0.5845.96").setup();
+		//WebDriverManager.chromedriver("116.0.5845.96").setup();
+		 WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
